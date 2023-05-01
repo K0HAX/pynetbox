@@ -156,7 +156,7 @@ class Request:
             "Content-Type": "application/json;",
         }
         req = self.http_session.get(
-            "{}docs/?format=openapi".format(self.normalize_url(self.base)),
+            "{}schema".format(self.normalize_url(self.base)),
             headers=headers,
         )
         if req.ok:
