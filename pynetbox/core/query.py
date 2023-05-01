@@ -156,7 +156,7 @@ class Request:
             "Content-Type": "application/json;",
         }
         req = self.http_session.get(
-            "{}api/schema/?format=json".format(self.normalize_url(self.base)),
+            "{}schema/?format=json".format(self.normalize_url(self.base)),
             headers=headers,
         )
         if req.ok:
